@@ -12,8 +12,18 @@ void testIsPermutation() {
     assert(isPermutations("abc", "def") == false);
 }
 
+void testURLify(){
+    assert(URLify("Mr John Smith", 13) == "Mr%20John%20Smith");
+}
+
+void testpalindromePermutations(){
+    assert(palindromePermutation("tactcoa")== true);
+}
+
 void runChapter1Tests() {
     testIsUnique();
     testIsPermutation();
     std::cout << "Chapter 1 tests passed!" << std::endl;
+    testpalindromePermutations();
 }
+
