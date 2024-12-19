@@ -67,7 +67,7 @@ int countChars(string str, char c){
         return count;
     }
 
-
+//TODO: Davis not efficinet use a hash map
 bool palindromePermutation(string str){
     
     
