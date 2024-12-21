@@ -80,6 +80,7 @@ bool palindromePermutation(string str){
 
 }
 
+//see how many "changes" are needed for string to be the same
 bool oneAway(string str1, string str2){
     if (str1 == str2)
         return true;
@@ -97,19 +98,24 @@ bool oneAway(string str1, string str2){
         if(char_map.find(y) != char_map.end()){
             misses++;
         }
+    }
 
     if (misses > 1)
         return false;
-    else
-        return true;
-    }
-
-
-
-
     
-    return false;
+    return true;
+    
 }
+
+string stringCompression(string str){
+    string new_string;
+
+
+    return new_string;
+}
+
+
+
 
 
 

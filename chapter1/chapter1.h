@@ -8,4 +8,5 @@ bool isPermutations(std::string str1, std::string str2);
 std::string URLify(std::string str, int length);
 bool palindromePermutation(std::string str);
 bool oneAway(std::string str1, std::string str2);
+std::string stringCompression(std::string str);
 #endif
