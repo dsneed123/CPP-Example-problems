@@ -73,7 +73,7 @@ int main(){
    cout << "********************************" << endl;
    print_matrix(rotateMatrix(arr,n),n);
    cout << "********************************" << endl;
-   print_matrix(zeroMatrix(arr,n),n);    
+   //print_matrix(zeroMatrix(arr,n),n);    
 }
 /*
 [
