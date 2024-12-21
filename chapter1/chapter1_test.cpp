@@ -20,6 +20,13 @@ void testpalindromePermutations(){
     assert(palindromePermutation("tactcoa")== true);
 }
 
+void testOneAway(){
+    assert(oneAway("pale", "ple") == true);
+    assert(oneAway("pales", "pale") == true);
+    assert(oneAway("pale", "bake") == false);
+  
+}
+
 void runChapter1Tests() {
     testIsUnique();
     testIsPermutation();

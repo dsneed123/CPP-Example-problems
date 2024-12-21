@@ -1,5 +1,6 @@
 #include "chapter1.h"  
 #include <iostream>
+#include <unordered_map> 
 
 using namespace std;
 bool isUnique(string str) {
@@ -54,8 +55,6 @@ string URLify(string str, int length){
     return str;
 }
 
-
-
 //helper function for palindome permutation. Returns the amount of chars in a string
 int countChars(string str, char c){
         int count = 0;
@@ -80,5 +79,38 @@ bool palindromePermutation(string str){
 
 
 }
+
+bool oneAway(string str1, string str2){
+    if (str1 == str2)
+        return true;
+
+    //used to map the characters of a string
+    unordered_map<char, int> char_map;
+
+    //adds all the chars from the string to the hash table
+    for (int x = 0; x < int(str1.length()); x++){
+        char_map[str1[x]] = x;
+    }
+
+    int misses = 0;
+    for (int y = 0; y < int(str2.length()); y++){
+        if(char_map.find(y) != char_map.end()){
+            misses++;
+        }
+
+    if (misses > 1)
+        return false;
+    else
+        return true;
+    }
+
+
+
+
+    
+    return false;
+}
+
+
 
 
