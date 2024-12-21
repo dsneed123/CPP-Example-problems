@@ -19,7 +19,7 @@ int** rotateMatrix(int** matrix, int n){
     for (int i = 0; i < n; i++){
         new_matrix[i] = new int[n];
     }
-
+    //change the rotation direction with the loop directions
     for (int x = 0; x < n; x++){
         for (int y= 0; y < n; y++){
             new_matrix[x][y] = matrix[y][x];
